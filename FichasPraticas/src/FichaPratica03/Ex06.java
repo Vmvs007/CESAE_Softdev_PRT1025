@@ -2,7 +2,7 @@ package FichaPratica03;
 
 import java.util.Scanner;
 
-public class Ex04 {
+public class Ex06 {
     public static void main(String[] args) {
 
         // Importar o Scanner
@@ -11,7 +11,9 @@ public class Ex04 {
         // Declarar as variáveis
         int inicio, salto, limite;
 
-        inicio = 0;
+        System.out.print("Inicio: ");
+        inicio = input.nextInt();
+
         salto = 1;
 
         System.out.print("Qual o limite: ");
