@@ -9,7 +9,7 @@ public class Ex07 {
             System.out.println(i);
             soma = soma + i;
             i++;
-            
+
         }
 
         System.out.println("Somatório: " + soma);
