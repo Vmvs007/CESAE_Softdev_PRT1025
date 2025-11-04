@@ -63,7 +63,7 @@ public class Ex04 {
                     break;
 
                 case 4: // Perfeito
-                    
+
 
                     break;
 
