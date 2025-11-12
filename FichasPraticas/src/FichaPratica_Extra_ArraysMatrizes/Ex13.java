@@ -21,9 +21,9 @@ public class Ex13 {
         System.out.println("\nMatriz 4x3:");
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[0].length; j++) {
-                System.out.print(matriz[i][j] + "\t"); // "\t" dá espaçamento tipo tabela
+                System.out.print(matriz[i][j] + "\t");
             }
-            System.out.println(); // muda de linha no fim de cada linha
+            System.out.println();
         }
 
     }
