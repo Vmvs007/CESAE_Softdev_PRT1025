@@ -1,0 +1,33 @@
+idAnimal;nome;especie;habitat;dieta;perigoExtincao
+A01;Byte;Lontra;Rio Binário;Carnívoro;NAO
+A02;Kernel;Leão;Savana Algorítmica;Carnívoro;SIM
+A03;Zé;Gorila;Floresta Tropical;Omnívoro;SIM
+A04;Python;Píton-real;Terrário de Répteis;Carnívoro;NAO
+A05;Ruby;Arara-vermelha;Floresta Tropical;Herbívoro;SIM
+A06;CSharp;Lobo-ibérico;Serra Nativa;Carnívoro;SIM
+A07;Bit;Pinguim-de-Humboldt;Pinguinário Linux;Carnívoro;SIM
+A08;Pixel;Suricata;Deserto Digital;Omnívoro;NAO
+A09;Cookie;Urso-pardo;Bosque Nublado;Omnívoro;NAO
+A10;Cache;Camelo;Deserto Digital;Herbívoro;NAO
+A11;Bug;Morcego;Caverna Debug;Omnívoro;NAO
+A12;Thread;Chita;Savana Algorítmica;Carnívoro;SIM
+A13;Socket;Lontra-marinha;Recife de Pacotes;Carnívoro;SIM
+A14;Lambda;Canguru;Planície Funcional;Herbívoro;NAO
+A15;Java;Raposa-do-deserto;Deserto Digital;Carnívoro;NAO
+A16;Git;Panda-vermelho;Floresta de Versionamento;Omnívoro;SIM
+A17;Branch;Macaco-capuchinho;Floresta de Versionamento;Omnívoro;NAO
+A18;Docker;Foca;Baía Contêiner;Carnívoro;NAO
+A19;Cloud;Golfinho;Oceano Cloud;Carnívoro;NAO
+A20;Kernelita;Tartaruga-marinha;Oceano Cloud;Herbívoro;SIM
+A21;Script;Lémure;Ilha dos Scripts;Omnívoro;SIM
+A22;API;Girafa;Savana Algorítmica;Herbívoro;SIM
+A23;Proxy;Raposa;Bosque Nublado;Omnívoro;NAO
+A24;PixelArt;Flamingo;Lago de Dados;Herbívoro;NAO
+A25;Array;Elefante-africano;Savana Algorítmica;Herbívoro;SIM
+A26;Boolean;Urso-polar;Tundra Cloud;Carnívoro;SIM
+A27;Snippet;Coala;Floresta de Versionamento;Herbívoro;SIM
+A28;Compile;Lince-ibérico;Serra Nativa;Carnívoro;SIM
+A29;KernelKid;Pinguim-rei;Pinguinário Linux;Carnívoro;SIM
+A30;Overflow;Hipopótamo;Lago de Dados;Herbívoro;NAO
+A31;Refactor;Guaxinim;Bosque Nublado;Omnívoro;NAO
+A32;Bitwise;Chacal;Savana Algorítmica;Carnívoro;NAO
