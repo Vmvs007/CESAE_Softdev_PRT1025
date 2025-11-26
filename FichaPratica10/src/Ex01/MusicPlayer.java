@@ -28,12 +28,29 @@ public class MusicPlayer {
         Musica musica1 = this.programacaoMusical.get(index1);
         Musica musica2 = this.programacaoMusical.get(index2);
 
-        this.programacaoMusical.set(index1,musica2);
-        this.programacaoMusical.set(index2,musica1);
+        this.programacaoMusical.set(index1, musica2);
+        this.programacaoMusical.set(index2, musica1);
     }
 
     public void limparProgramacao() {
         this.programacaoMusical.clear();
+    }
+
+    public void calcularDuracaoTotal() {
+        int segundosTotais = 0;
+
+        for (Musica musicaAtual : this.programacaoMusical) {
+            segundosTotais += musicaAtual.getDuracaoSegundos();
+        }
+
+        int horas, minutos, segundos;
+
+        horas = segundosTotais / 3600;
+        minutos = (segundosTotais / 60)-(horas*60) ;
+        segundos = segundosTotais-(horas*3600)-(minutos*60);
+
+        System.out.println(horas + ":" + minutos + ":" + segundos);
+
     }
 
     public void imprimirRelatorio() {
