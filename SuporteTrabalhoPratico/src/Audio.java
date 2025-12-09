@@ -3,27 +3,47 @@ import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import java.io.File;
 
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import java.io.File;
+
 public class Audio {
+
+    // Clip visível em toda a classe para poder ser parado noutro método
+    private static Clip clip;
+
     /**
      * Método para correr ficheiros áudio durante a execução do programa
-     * *     * @param caminho Caminho para o ficheiro áudio
+     * @param caminho Caminho para o ficheiro áudio
      */
     public static void playMusic(String caminho) {
-        try { // Bloco try para envolver o código que pode potencialmente lançar uma excepção
+        try {
             File audio = new File(caminho);
-            if (audio.exists()) { // Se encontrar o ficheiro
-                // Instanciar objecto do tipo bAudioInputStream(bibliotecas importadas acima) com o ficheiro áudio passado como parâmetro
+            if (audio.exists()) {
                 AudioInputStream audioInput = AudioSystem.getAudioInputStream(audio);
-                Clip clip = AudioSystem.getClip(); // Instanciar objecto do tipo Clip
-                clip.open(audioInput); // Abre o ficheiro
-                clip.start(); // Corre o ficheiro
-            } else { // Se não encontrar o ficheiro
-                // NOTA: Aqui poderia inserir uma mensagem a informar o utilizador que o ficheiro de áudio não foi encontrado.
-                // Contudo, achei melhor não mostrar nada caso não exista ficheiro.
-                // Como existe excepção, o programa não dá erro e continua a correr, mas sem áudio.
+                clip = AudioSystem.getClip();
+                clip.open(audioInput);
+                clip.start();
+            } else {
+                // Poderias aqui mostrar uma mensagem a informar que o ficheiro não foi encontrado
             }
-        } catch (Exception e) { // Código a ser executado se for detectado erro
-            System.out.println();
+        } catch (Exception e) {
+            System.out.println("Erro ao reproduzir áudio: " + e.getMessage());
+        }
+    }
+
+    /**
+     * Método para parar a reprodução do áudio
+     */
+    public static void stopMusic() {
+        try {
+            if (clip != null && clip.isRunning()) {
+                clip.stop();   // pára o áudio
+                clip.close();  // liberta recursos
+            }
+        } catch (Exception e) {
+            System.out.println("Erro ao parar áudio: " + e.getMessage());
         }
     }
 }
