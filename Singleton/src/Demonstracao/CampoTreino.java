@@ -1,3 +1,5 @@
+package Demonstracao;
+
 public class CampoTreino {
 
     public CampoTreino() {

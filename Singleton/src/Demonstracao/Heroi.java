@@ -1,3 +1,5 @@
+package Demonstracao;
+
 public class Heroi {
 
     private static Heroi instance;

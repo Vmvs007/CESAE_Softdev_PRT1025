@@ -1,0 +1,5 @@
+Log 1: Variável x = 15
+Log 2: Variável y = 20
+Log 3: Utilizar carregou no botão
+Log 4: Variável nome = Joaquim
+Log 5: Objeto criado

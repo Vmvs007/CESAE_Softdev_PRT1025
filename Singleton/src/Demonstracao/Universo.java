@@ -1,3 +1,5 @@
+package Demonstracao;
+
 public class Universo {
 
     private static Universo instance;
