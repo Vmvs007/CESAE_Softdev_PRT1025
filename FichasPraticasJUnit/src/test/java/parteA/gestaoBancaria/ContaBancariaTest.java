@@ -12,40 +12,42 @@ class ContaBancariaTest {
 
     @BeforeEach
     void setUp() {
-        conta1 = new ContaBancaria("Joaquim",0,2025,"PT","PT50 0000 1333 4444");
-        conta2 = new ContaBancaria("Joana",1000,2024,"ES","ES40 0000 1333 4444");
+        conta1 = new ContaBancaria("Joaquim", 0, 2025, "PT", "PT50 0000 1333 4444");
+        conta2 = new ContaBancaria("Joana", 1000, 2024, "ES", "ES40 0000 1333 4444");
 
     }
 
     @Test
-    public void consultarSaldoTest(){
-        assertEquals(0,conta1.consultarSaldo());
-        assertEquals(1000,conta2.consultarSaldo());
+    public void consultarSaldoTest() {
+        assertEquals(0, conta1.consultarSaldo());
+        assertEquals(1000, conta2.consultarSaldo());
     }
 
     @Test
-    public void testDepositarPositivo(){
+    public void testDepositarPositivo() {
         conta1.depositar(150);
-        assertEquals(150,conta1.consultarSaldo());
+        assertEquals(150, conta1.consultarSaldo());
 
         conta2.depositar(300);
-        assertEquals(1300,conta2.consultarSaldo());
+        assertEquals(1300, conta2.consultarSaldo());
     }
 
     @Test
-    public void testDepositarZero(){
-
+    public void testDepositarZero() {
+        assertThrows(IllegalArgumentException.class, () -> conta1.depositar(0));
+        assertThrows(IllegalArgumentException.class, () -> conta2.depositar(0));
     }
 
     @Test
-    public void testDepositarNegativo(){
-
+    public void testDepositarNegativo() {
+        assertThrows(IllegalArgumentException.class, () -> conta1.depositar(-10));
+        assertThrows(IllegalArgumentException.class, () -> conta2.depositar(-500));
     }
 
     @Test
-    public void testLevantarValido(){
+    public void testLevantarValido() {
         conta2.levantar(200);
-        assertEquals(800,conta2.consultarSaldo());
+        assertEquals(800, conta2.consultarSaldo());
     }
 
 
