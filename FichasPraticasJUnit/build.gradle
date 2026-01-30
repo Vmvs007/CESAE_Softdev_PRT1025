@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'info.solidsoft.pitest' version '1.15.0'
 }
 
 group = 'org.example'
@@ -16,4 +17,18 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+pitest {
+    junit5PluginVersion = '1.2.1'
+
+    targetClasses = ['parteB.gestaoBiblioteca.*']
+    targetTests   = ['parteB.gestaoBiblioteca.*']
+
+    outputFormats = ['HTML']
+    timestampedReports = false
+
+    threads = Runtime.runtime.availableProcessors()
+
+    failWhenNoMutations = false
 }
