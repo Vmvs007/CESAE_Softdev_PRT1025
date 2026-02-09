@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_cumprimentar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="25dp"
+        android:text="CUMPRIMENTAR"
+        app:layout_constraintEnd_toEndOf="@+id/edit_apelido"
+        app:layout_constraintTop_toBottomOf="@+id/edit_apelido" />
+
+    <EditText
+        android:id="@+id/edit_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="243dp"
+        android:ems="10"
+        android:hint="Insira o seu nome"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_apelido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:hint="Insira o seu apelido"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/edit_nome"
+        app:layout_constraintTop_toTopOf="@+id/edit_nome" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

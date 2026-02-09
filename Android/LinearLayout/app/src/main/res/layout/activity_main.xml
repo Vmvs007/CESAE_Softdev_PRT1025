@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/light_green"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="Calculadora de Consumos"
+        android:textColor="@color/dark_green"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_distancia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:hint="Insira a Distância (KMs)"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:id="@+id/layout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_ferrari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/dark_green"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="FERRARI"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/button_clio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="1"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:backgroundTint="@color/dark_green"
+            android:text="CLIO"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/button_bmw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:layout_weight="1"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:backgroundTint="@color/dark_green"
+            android:text="BMW"
+            app:cornerRadius="0dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="Consumo: 0 L"
+        android:textColor="@color/dark_green"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/image_combustivel_wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/combustivel_wallpaper" />
+
+
+    <TextView
+        android:id="@+id/text_copyright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="Desenvolvido por: Vitor Santos"
+        android:textColor="@color/dark_green"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
