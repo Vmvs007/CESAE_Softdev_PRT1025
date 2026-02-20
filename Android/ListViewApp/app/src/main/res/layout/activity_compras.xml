@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ComprasActivity">
+
+ <LinearLayout
+     android:id="@+id/layout_carrinho"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:paddingTop="75dp"
+     android:paddingBottom="10dp"
+     android:background="@color/dark_blue"
+     android:orientation="horizontal">
+
+     <TextView
+         android:id="@+id/text_peso"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:gravity="center"
+         android:fontFamily="@font/candal"
+         android:textSize="18sp"
+         android:textColor="@color/light_blue"
+         android:text="PESO: 0.00 KG."/>
+
+     <TextView
+         android:id="@+id/text_total"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:gravity="center"
+         android:fontFamily="@font/candal"
+         android:textSize="18sp"
+         android:textColor="@color/light_blue"
+         android:text="TOTAL: 0.00 €"/>
+
+ </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_catalogo"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"/>
+
+    <LinearLayout
+        android:id="@+id/layout_separador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp"
+        android:background="@color/dark_blue"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_separador"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:fontFamily="@font/candal"
+            android:textSize="20sp"
+            android:textColor="@color/light_blue"
+            android:text="CARRINHO"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_carrinho"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>
